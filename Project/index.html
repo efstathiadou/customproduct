@@ -20,32 +20,31 @@
                         <p>don't worry too much, you can do both!</p> 
             
                         <div class="style-choice">
-                            <input type="button" id="danceChoice" value="Dance" onclick="showDance()"/>
-                            <input type="button" id="skateChoice" value="Skate" onclick="showSkate()"/>
+                            <input type="button" name="danceMoves" id="danceChoice" value="Dance"/>
+                            <input type="button" name="danceMoves" id="skateChoice" value="Skate"/>
                         </div> 
 
                         <div id="danceDetails" style="display: none;" class="danceRollers">
                             <h2>Choose your color:</h2>
                             <ul class="color" id="danceColorId">
-                                <input type="button" class="skateColor" id="whitedance" value=White >
-                                <input type="button" class="skateColor" id="pinkdance" value=Pink >
-                                <input type="button" class="skateColor" id="purpledance" value=Purple >
+                                <input type="button" name="color" class="skateColor" id="whitedance" value=White >
+                                <input type="button" name="color" class="skateColor" id="pinkdance" value=Pink >
+                                <input type="button" name="color" class="skateColor" id="purpledance" value=Purple >
                             </ul>
                         </div>
 
                         <div id="skateDetails" style="display: none;" class="skateRollers">
                             <h2>Choose your color:</h2>
-                            <ul class="color" id="skateColorId">
-                                <input type="button" class="skateColor" id="brownskate" value=Brown >
-                                <input type="button" class="skateColor" id="blackskate" value=Black >
+                            <ul class="color"  id="skateColorId">
+                                <input type="button" name="color" class="skateColor" id="brownskate" value=Brown >
+                                <input type="button" name="color" class="skateColor" id="blackskate" value=Black >
                             </ul>
                         </div>
                 </div>
             </div>
          </section>
          <div class="price">
-            <p>Total:</p>
-            <input type="text" id="total" value="0"></textarea>
+            <p>Total:</p> <p id=total>0</p>
         </div>
         <script src="main.js"></script> 
     </body>
