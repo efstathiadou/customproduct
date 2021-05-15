@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Configuration Page</title>
+        <link rel="stylesheet" type="text/css" href="main.css" />
+    <head>
+        
+    <body>
+        <section class="style-color">
+            <div class="first-container">
+                <div class="imagery">
+                    <img class="image" id="firstImage" src="images/starter.png" alt="Skates">
+                </div>
+
+                <div class="details">
+                    <h1>Choose Your Style</h1>
+                        <h3>Are you more into dance moves
+                            or the skatepark? </h3>
+                        <p>don't worry too much, you can do both!</p> 
+            
+                        <div class="style-choice">
+                            <input type="button" id="danceChoice" value="Dance" onclick="showDance()"/>
+                            <input type="button" id="skateChoice" value="Skate" onclick="showSkate()"/>
+                        </div> 
+
+                        <div id="danceDetails" style="display: none;" class="danceRollers">
+                            <h2>Choose your color:</h2>
+                            <ul class="color" id="danceColorId">
+                                <input type="button" class="skateColor" id="whitedance" value=White >
+                                <input type="button" class="skateColor" id="pinkdance" value=Pink >
+                                <input type="button" class="skateColor" id="purpledance" value=Purple >
+                            </ul>
+                        </div>
+
+                        <div id="skateDetails" style="display: none;" class="skateRollers">
+                            <h2>Choose your color:</h2>
+                            <ul class="color" id="skateColorId">
+                                <input type="button" class="skateColor" id="brownskate" value=Brown >
+                                <input type="button" class="skateColor" id="blackskate" value=Black >
+                            </ul>
+                        </div>
+                </div>
+            </div>
+         </section>
+         <div class="price">
+            <p>Total:</p>
+            <input type="text" id="total" value="0"></textarea>
+        </div>
+        <script src="main.js"></script> 
+    </body>
+        
+</html>
